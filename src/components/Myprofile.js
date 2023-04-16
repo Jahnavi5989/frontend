@@ -7,7 +7,7 @@ import Profile from './Profile'
 const Myprofile = () => {
   const[user,setUser]=useState()
   const sendRequest=async()=>{
-    const res=await axios.get(`http://localhost:5000/myprofile`,{
+    const res=await axios.get(`https://gfghackathon-ordr3zrkza-el.a.run.app/myprofile`,{
         headers:{
             'x-token': localStorage.getItem("usertoken")
         }
