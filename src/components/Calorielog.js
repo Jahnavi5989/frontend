@@ -9,7 +9,7 @@ const Calorielog = () => {
   // const id=localStorage.getItem("userId");
   
   const sendRequest=async()=>{
-    const res=await axios.get(`http://localhost:5000/mycalorielogs`,{
+    const res=await axios.get(`https://gfghackathon-ordr3zrkza-el.a.run.app/mycalorielogs`,{
         headers:{
             'x-token': localStorage.getItem("usertoken")
         }
