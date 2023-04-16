@@ -8,7 +8,7 @@ const Foodlog = () => {
   // const id=localStorage.getItem("userId");
   
   const sendRequest=async()=>{
-    const res=await axios.get(`http://localhost:5000/myfoodlogs`,{
+    const res=await axios.get(`https://gfghackathon-ordr3zrkza-el.a.run.app/myfoodlogs`,{
         headers:{
             'x-token': localStorage.getItem("usertoken")
         }
