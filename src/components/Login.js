@@ -25,7 +25,7 @@ const Login = () => {
       }
       const  submitHandler =e=>{
         e.preventDefault();
-        axios.post('http://localhost:5000/login',data).then(
+        axios.post('https://gfghackathon-ordr3zrkza-el.a.run.app/login',data).then(
           res=>(localStorage.setItem("userId",res.data.user._id),localStorage.setItem("usertoken",res.data.token),setToken(res.data.token))
         )
         if(token){
