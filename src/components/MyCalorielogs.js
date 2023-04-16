@@ -24,7 +24,7 @@ const MyFoodlogs = ({activity,duration,weight,burnedcal,date,isUser,id}) => {
     
   const navigate = useNavigate();
   const deleteRequest= async ()=>{
-    const res = await axios.delete(`http://localhost:5000/deletecalorielog/${id}`).catch(err=>console.log(err));
+    const res = await axios.delete(`https://gfghackathon-ordr3zrkza-el.a.run.app/deletecalorielog/${id}`).catch(err=>console.log(err));
     const data = await res.data;
     return data
   }
