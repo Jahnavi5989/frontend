@@ -21,7 +21,7 @@ const handleChange=(e)=>{
   }));
 }
 const sendRequest = async()=>{
-  const res=await axios.post("http://localhost:5000/Calorielogs",
+  const res=await axios.post("https://gfghackathon-ordr3zrkza-el.a.run.app/Calorielogs",
   {
                 activity:inputs.activity,
                 duration:inputs.duration,
